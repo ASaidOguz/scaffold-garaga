@@ -4,6 +4,7 @@
     "dockerfile": "Dockerfile"
   },
   "remoteUser": "root",
+  "forwardPorts": [5050],
   "customizations": {
     "vscode": {
       "extensions": ["streetsidesoftware.code-spell-checker"]

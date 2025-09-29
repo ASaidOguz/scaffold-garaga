@@ -17,4 +17,13 @@ export default defineConfig({
       apply: 'serve', // Only apply in dev mode
     }
   ],
+  server: {
+    proxy: {
+      '/rpc': {
+        target: 'http://localhost:5050',
+        changeOrigin: true,
+        secure: false,
+      },
+    },
+  },
 })
